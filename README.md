@@ -3,7 +3,7 @@
   <h2>
     <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"><strong>Frontend Mentor Challenge</strong></a>  </h2>
     <p>
-    <a href="#">My Solution</a>
+    <a href="https://kylekasprzyk.github.io/frontend-mentor-intro-component-with-sign-up-form/">My Solution</a>
   </p>
 </div>
 
@@ -39,8 +39,8 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 
 ## Links
 
-- [Solution URL](#)
-- [Live Site URL](#)
+- [Solution URL](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-solution-ULauFczb-1)
+- [Live Site URL](https://kylekasprzyk.github.io/frontend-mentor-intro-component-with-sign-up-form/)
 
 ## Built with
 
