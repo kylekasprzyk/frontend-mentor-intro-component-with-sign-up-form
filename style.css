@@ -145,7 +145,6 @@ h6 {
     line-height: 1.625rem;
     color: hsl(var(--grayish-blue));
     mix-blend-mode: normal;
-    opacity: 0.75;
     padding: .9375rem 1.1875rem;
 }
 
@@ -180,6 +179,10 @@ h6 {
     line-height: 1.3125rem;
     color: hsl(var(--red));
     text-decoration: none;
+}
+
+#first-name::placeholder {
+    color: #000000;
 }
 
 
@@ -304,11 +307,6 @@ h6 {
 
     .sign-up-card a:hover {
         text-decoration: underline;
-    }
-
-    ::placeholder {
-        color: hsl(var(--grayish-blue));
-        opacity: 0.75;
     }
 
     input:hover {
