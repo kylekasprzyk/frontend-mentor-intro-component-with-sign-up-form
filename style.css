@@ -1,0 +1,341 @@
+:root {
+    /* colors */
+    --red: 0 100% 74%;
+    --green: 154 59% 51%;
+    --blue: 248 32% 49%;
+    --dark-blue: 249 10% 26%;
+    --grayish-blue: 246 25% 77%;
+    --white: 0 0% 100%;
+
+    /* font-sizes */
+    --fs-11px: .6875rem;
+    --fs-14px: .875rem;
+    --fs-15px: .9375rem;
+    --fs-16px: 1rem;
+    --fs-18px: 1.125rem;
+    --fs-28px: 1.75rem;
+    --fs-50px: 3.125rem;
+
+    /* font-family */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: hsl(var(--red));
+    background-image: url(./images/bg-intro-mobile.png);
+    text-align: center;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+.desktop {
+    max-width: 50rem;
+    margin: auto;
+    animation: slide 1000ms ease-in-out;
+}
+
+.cta-text {
+    margin: 5.5rem 1.5rem 4rem 1.5rem;
+}
+
+.cta-text h1 {
+    font-size: var(--fs-28px);
+    line-height: 2.25rem;
+    color: hsl(var(--white));
+    margin-bottom: 1rem;
+}
+
+.cta-text p {
+
+    font-size: var(--fs-16px);
+    line-height: 1.625rem;
+    color: hsl(var(--white));
+}
+
+.banner {
+    background-color: hsl(var(--blue));
+    box-shadow: 0rem .5rem 0rem rgba(0, 0, 0, 0.14688);
+    border-radius: .625rem;
+    margin: 1.5rem;
+    font-size: var(--fs-15px);
+    line-height: 1.625rem;
+    color: hsl(var(--white));
+    padding: 1.125rem 4.125rem;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.sign-up-card {
+    margin: 1.5rem;
+    background-color: hsl(var(--white));
+    box-shadow: 0rem .5rem 0rem rgba(0, 0, 0, 0.14688);
+    border-radius: .625rem;
+    padding-top: 1.5rem;
+}
+
+.sign-up-card input {
+    width: 85%;
+    margin: 0.5rem;
+    border: .0625rem solid #DEDEDE;
+    border-radius: .3125rem;
+    font-weight: 600;
+    font-size: var(--fs-14px);
+    line-height: 1.625rem;
+    color: hsl(var(--grayish-blue));
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    padding: .9375rem 1.1875rem;
+}
+
+.sign-up-card button {
+    width: 85%;
+    margin-top: 0.5rem;
+    border: none;
+    background: hsl(var(--green));
+    box-shadow: inset 0rem -0.25rem 0rem rgba(0, 0, 0, 0.0908818);
+    border-radius: .3125rem;
+    font-weight: 600;
+    font-size: var(--fs-15px);
+    line-height: 1.625rem;
+    letter-spacing: .0625rem;
+    text-transform: uppercase;
+    color: hsl(var(--white));
+    padding: .9375rem 2.625rem;
+}
+
+.sign-up-card p {
+    padding: .5rem 2.4375rem 1.5rem 2.4375rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--fs-11px);
+    line-height: 1.3125rem;
+    color: hsl(var(--grayish-blue));
+}
+
+.sign-up-card a {
+    font-weight: 700;
+    font-size: var(--fs-11px);
+    line-height: 1.3125rem;
+    color: hsl(var(--red));
+    text-decoration: none;
+}
+
+
+.error-message {
+    display: block;
+    width: 85%;
+    margin: auto;
+    font-style: italic;
+    font-weight: 500;
+    font-size: var(--fs-11px);
+    line-height: 1rem;
+    text-align: right;
+    color: hsl(var(--red));
+}
+
+.thank-you-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    height: 13.4375rem;
+    margin: 1.5rem;
+    background-color: hsl(var(--white));
+    box-shadow: 0rem .5rem 0rem rgba(0, 0, 0, 0.14688);
+    border-radius: .625rem;
+    padding: 0 1rem;
+    animation: grow 1000ms;
+}
+
+.thank-you-section h2 {
+    color: hsl(var(--green));
+}
+
+.thank-you-section p {
+    color: hsl(var(--blue));
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: var(--fs-11px);
+    text-align: center;
+    color: hsl(var(--blue));
+}
+
+.attribution a {
+    color: hsl(var(--blue));
+}
+
+@media screen and (min-width: 1150px) {
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    .desktop {
+        max-width: 69.375rem;
+        margin: 7.9375rem auto;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-text {
+        margin: -1.125rem 0 0 0;
+    }
+
+    .cta-text h1 {
+        text-align: start;
+        font-weight: 700;
+        font-size: var(--fs-50px);
+        line-height: 3.4375rem;
+        letter-spacing: -0.0326rem;
+    }
+
+    .cta-text p {
+        text-align: start;
+        font-weight: 500;
+        font-size: var(--fs-16px);
+        line-height: 1.625rem;
+        padding-top: .6875rem;
+    }
+
+    .banner {
+        margin: 0;
+        margin-left: .9375rem;
+        padding: 1.125rem 6.875rem 1rem 6.875rem;
+        font-weight: 400;
+        font-size: var(--fs-15px);
+        line-height: 1.625rem;
+        text-align: center;
+        letter-spacing: .0167rem;
+    }
+
+    .sign-up-card {
+        margin: 1.5rem 0rem 1.5rem .9375rem;
+    }
+
+    .sign-up-card input {
+        margin: .9375rem .9375rem 0rem .9375rem;
+        padding: .9375rem 2rem;
+    }
+
+    .sign-up-card button {
+        margin-top: 1.75rem;
+    }
+
+    .sign-up-card button:hover {
+        background: #77E2B3;
+        cursor: pointer;
+    }
+
+    .sign-up-card button:active {
+        transform: translateY(.125rem);
+    }
+
+    .sign-up-card p {
+        padding-bottom: 2.75rem;
+    }
+
+    .sign-up-card a:hover {
+        text-decoration: underline;
+    }
+
+    ::placeholder {
+        color: hsl(var(--grayish-blue));
+        opacity: 0.75;
+    }
+
+    input:hover {
+        font-weight: 600;
+        font-size: var(--fs-14px);
+        line-height: 1.625rem;
+        letter-spacing: .0156rem;
+        color: hsl(var(--grayish-blue));
+        border: .0625rem solid hsl(var(--dark-blue));
+    }
+}
+
+/* animation */
+@keyframes slide {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+@keyframes grow {
+    from {
+      transform: scale(0.25);
+    }
+    to {
+      transform: scale(1);
+    }
+  }

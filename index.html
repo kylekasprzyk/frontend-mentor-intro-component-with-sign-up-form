@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kyle Kasprzyk">
+  <meta name="title" content="Intro Component With Sign Up Form Solution for FrontendMentor.io">
+  <meta name="description" content="Intro Component With Sign Up Form Solution for FrontendMentor.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+  <main class="desktop">
+    <div class="cta-text">
+      <h1>Learn to code by watching others</h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <!-- input state start -->
+    <div class="input-section">
+      <div class="banner"><span class="bold-text">Try it free 7 days</span> then $20/mo. thereafter</div>
+      <form id="sign-up-form" class="sign-up-card">
+        <input style="color: #3D3B48;" type="text" id="first-name" name="first-name" placeholder="First Name"><br>
+        <span id="first-name-error" class="error-message"></span>
+        <input style="color: #3D3B48;" type="text" id="last-name" name="last-name" placeholder="Last Name"><br>
+        <span id="last-name-error" class="error-message"></span>
+        <input style="color: #3D3B48;" type="email" id="email" name="email" placeholder="Email Address"><br>
+        <span id="email-error" class="error-message"></span>
+        <input style="color: #3D3B48;" type="password" id="password" name="password" placeholder="Password"><br>
+        <span id="password-error" class="error-message"></span>
+        <button type="submit">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
+      </form>
+    </div>
+    <!-- input state end -->
+
+    <!-- Thank you state start -->
+    <div class="thank-you-section hidden" id="thank-you-el"></div>
+    <!-- Thank you state end -->
+    <script src="./index.js"></script>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/kylekasprzyk" target="_blank">Kyle Kasprzyk</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
